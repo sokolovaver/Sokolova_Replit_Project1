@@ -1,5 +1,6 @@
 def within_triangle(point1, point2, point3, test_point):
   def sign(p1, p2, p3):
+    #Функция для определения нахождения функции в области треугольника
       return (p1[0] - p3[0]) * (p2[1] - p3[1]) - (p2[0] - p3[0]) * (p1[1] - p3[1])
 
   b1 = sign(test_point, point1, point2) < 0.0
